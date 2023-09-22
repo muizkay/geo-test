@@ -22,7 +22,7 @@ pipeline{
     }
    stage('upload artifact'){
         steps{
-            nexusArtifactUploader artifacts: [[artifactId: 'bioMedical', classifier: '', file: 'target/bioMedical-0.0.1-SNAPSHOT.jar', type: 'jar']], credentialsId: 'NexusID', groupId: 'qa', nexusUrl: '198.58.119.40:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'muizkay-repo', version: '0.0.2-SNAPSHOT'
+            nexusArtifactUploader artifacts: [[artifactId: 'bioMedical', classifier: '', file: 'target/bioMedical-0.0.1-SNAPSHOT.jar', type: 'jar']], credentialsId: 'NexusID', groupId: 'qa', nexusUrl: '198.58.119.40:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'muizkay-repo', version: '0.0.1-SNAPSHOT'
         }
     }
 
